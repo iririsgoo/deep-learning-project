@@ -17,12 +17,24 @@ In particular, this file will show you some sample output of the SatNet-based mo
 
 The 10K 9x9 Sudoku boards (9K test/1K train) used in this project was from [https://github.com/Kyubyong/sudoku]
 
+** **The SatNet-based model
+
+This model presents a differentiable optimization-based MAXSAT solver, namely an SDP relax-ation of MAXSAT,  and demonstrate  that SATNet can be integrated into larger deep network architecture for end toend training. 
+
+In both forward and backward pass they use similar coor-dinate descent approach, which has similar fast convergence properties. This procedure enables the model to compute the desired gradients without needing to maintain intermediate Jacobians explicitly.
+
+Here is a picture of the Forward Pass of the MAXSAT Layer.
+
+![](images/model-architecture.png)
+(Image Source: SATNet: Bridging deep learning and logical reasoning usinga differentiable satisfiability solver, Wang et al, ICML 2019)
+
 
 ** **Experiment procedure
 
-First, the game started with an unsolved Sudoku, with several initially filled digits. 
-![](images/initialSudoku.jpeg)
+After we trained the model with the training set, we test its performance with the test dataset.
 
+First, the game started with an unsolved Sudoku, with several initially filled digits. An example from the test:
+![](images/initialSudoku.jpeg)
 
 After the initially unsolved Sudoku went through the SatNet-based model, we printed out the output to visualize the performance of the model. 
 
