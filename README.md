@@ -57,6 +57,7 @@ For convenience, we decided to attach only the first 4 epochs results for the fi
 
 
 ** **Model evaluation** **
+
 After we run training set with 20 epochs, the accuracy of solving standard Sudoku is 95.5%, as shown in the figure below. 
 The accuracy can be improved to over 99% when we increase the number of epochs to 100, but doesn’t improve much over 50 epochs. For our project, the next step is: generate our own dataset for solving a digital Kakuro problem.
 
