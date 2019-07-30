@@ -28,7 +28,7 @@ Here is a picture of the Forward Pass of the MAXSAT Layer.
 (Image Source: SATNet: Bridging deep learning and logical reasoning usinga differentiable satisfiability solver, Wang et al, ICML 2019)
 
 
-** **Experiment procedure** **
+** **Experiment procedure and sample results** **
 
 After we trained the model with the training set, we test its performance with the test dataset.
 
@@ -53,3 +53,17 @@ For convenience, we decided to attach only the first 4 epochs results for the fi
 ![](images/epoch3.jpeg)
 
 ![](images/epoch4.jpeg)
+
+
+
+** **Model evaluation** **
+After we run training set with 20 epochs, the accuracy of solving standard Sudoku is 95.5%, as shown in the figure below. 
+The accuracy can be improved to over 99% when we increase the number of epochs to 100, but doesn’t improve much over 50 epochs. For our project, the next step is: generate our own dataset for solving a digital Kakuro problem.
+
+![](images/accuracy.jpeg)
+
+
+
+
+
+
