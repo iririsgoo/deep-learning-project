@@ -4,4 +4,4 @@ This repository contains the code for the Digital Sudoku SatNet project. We play
 
 
 Firstly the game started with an unsolved Sudoku, with several initially filled digits. 
-![](imagegs/initial%Sudoku.jpg)
+![](images/initial%Sudoku.jpg)
