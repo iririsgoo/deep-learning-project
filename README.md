@@ -65,6 +65,10 @@ The accuracy can be improved to over 99% when we increase the number of epochs t
 
 
 
+** **Model Modification** **
+We modify the model with the hope that it explains the step-by-step process of solving a Sudoku puzzle.
+1. data preparation: We manually solved 32 Sudokuboards  and  relabelled  each  with  the  strategies  we  take  in each step, making sure to record the position, step number and labels. 
+Two Sudoku Solving stratgies we use:
 
-
-
+![](images/1solecandidate.png)
+![](images/2uniquecandidate.png)
