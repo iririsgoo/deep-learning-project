@@ -62,7 +62,7 @@ The accuracy can be improved to over 99% when we increase the number of epochs t
 ![](images/accuracy.jpeg)
 
 
-## Model Modification** **
+## Model Modification
 We modify the model with the hope that it explains the step-by-step process of solving a Sudoku puzzle.
 ###### Data Preparation: 
 We manually solved 32 Sudokuboards  and  relabelled  each  with  the  strategies  we  take  in each step, making sure to record the position, step number and labels. 
@@ -73,8 +73,12 @@ Two Sudoku Solving stratgies we use:
 ![](images/2uniquecandidate.png)
 
 Using the two defined strategies, each time we record a number to a cell, we also record which strategy this step takes, as well as the order of the step. In the end, for each solved Sudoku(Fig.11), there are both a rule index matrix(Fig.12) and a step index matrix(Fig.13) For example, in Figure 10, if the 5 in row 1, column 1 was put there by us in the 10th step of solving the board, using the "sole candidate" strategy, then we put 1 in row1, column1 of the corresponding index matrix, and 10 in the corresponding step index matrix. 
+
+a solved sudoku
 ![](images/8.jpg)
+a corresponding rule index matrix
 ![](images/9.jpg)
+a corresponding step index matrix
 ![](images/10.jpg)
 
 
