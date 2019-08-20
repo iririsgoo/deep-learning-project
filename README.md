@@ -69,6 +69,7 @@ We manually solved 32 Sudokuboards  and  relabelled  each  with  the  strategies
 Two Sudoku Solving stratgies we use:
  1. Sole Candidate
 ![](images/1solecandidate.png)
+
  2. Unique Candidate
 ![](images/2uniquecandidate.png)
 
@@ -76,12 +77,15 @@ Using the two defined strategies, each time we record a number to a cell, we als
 
 a solved sudoku
 ![](images/8.jpg)
+
 a corresponding rule index matrix
 ![](images/9.jpg)
+
 a corresponding step index matrix
 ![](images/10.jpg)
 
 
 ###### Result
-After we labelled the data, we took the rule index matricesas output data set and trained the SATNet model for rule pre-diction. The result is shown in Fig 13. 0 means the numberis already given. ”sole” means this number is determined bythe rule 1, sole candidate. ”unique” means this number is de-cided by rule 2, unique candidate. From this model, we canpredict the solving rules for each number. The accuracy ofthis rule prediction is 90% on training data and 70% on testdata. The variance is high because the size of training setis small. We were short on time only relabelled 30 Sudokuboards.  The  model  overfits  to  training  data.  Fig  15  showsthe loss and error value for the rule prediction model. Wecan see the overfitting issue from the curves. The error rateis 1.0 because we used different way to interpret the outputresult. When we printed out and checked the results, the ac-curacy is about 70%.
+We present one example output of the model
+0 means the numberis already given. ”sole” means this number is determined bythe rule 1, sole candidate. ”unique” means this number is de-cided by rule 2, unique candidate. From this model, we canpredict the solving rules for each number. The accuracy ofthis rule prediction is 90% on training data and 70% on testdata. The variance is high because the size of training setis small. We were short on time only relabelled 30 Sudokuboards.  The  model  overfits  to  training  data.  Fig  15  showsthe loss and error value for the rule prediction model. Wecan see the overfitting issue from the curves. The error rateis 1.0 because we used different way to interpret the outputresult. When we printed out and checked the results, the ac-curacy is about 70%.
 
