@@ -93,7 +93,7 @@ a corresponding step index matrix
 ###### Result
 We present one example output of the model
 
-![](images/sampleOutput.png  | width="100px")
+![](images/sampleOutput.png)
 
 0 means the numberis already given. 
 ”sole” means this number is determined by strategy 1: sole candidate. 
