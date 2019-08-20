@@ -66,11 +66,18 @@ The accuracy can be improved to over 99% when we increase the number of epochs t
 We modify the model with the hope that it explains the step-by-step process of solving a Sudoku puzzle.
 ###### Data Preparation: 
 We manually solved 32 Sudokuboards  and  relabelled  each  with  the  strategies  we  take  in each step, making sure to record the position, step number and labels. 
-
 Two Sudoku Solving stratgies we use:
  1. Sole Candidate
 ![](images/1solecandidate.png)
  2. Unique Candidate
 ![](images/2uniquecandidate.png)
 
+Using the two defined strategies, each time we record a number to a cell, we also record which strategy this step takes, as well as the order of the step. In the end, for each solved Sudoku(Fig.11), there are both a rule index matrix(Fig.12) and a step index matrix(Fig.13) For example, in Figure 10, if the 5 in row 1, column 1 was put there by us in the 10th step of solving the board, using the "sole candidate" strategy, then we put 1 in row1, column1 of the corresponding index matrix, and 10 in the corresponding step index matrix. 
+![](images/8.jpg)
+![](images/9.jpg)
+![](images/10.jpg)
+
+
+###### Result
+After we labelled the data, we took the rule index matricesas output data set and trained the SATNet model for rule pre-diction. The result is shown in Fig 13. 0 means the numberis already given. ”sole” means this number is determined bythe rule 1, sole candidate. ”unique” means this number is de-cided by rule 2, unique candidate. From this model, we canpredict the solving rules for each number. The accuracy ofthis rule prediction is 90% on training data and 70% on testdata. The variance is high because the size of training setis small. We were short on time only relabelled 30 Sudokuboards.  The  model  overfits  to  training  data.  Fig  15  showsthe loss and error value for the rule prediction model. Wecan see the overfitting issue from the curves. The error rateis 1.0 because we used different way to interpret the outputresult. When we printed out and checked the results, the ac-curacy is about 70%.
 
