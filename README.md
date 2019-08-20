@@ -102,4 +102,4 @@ We present one example output of the model
 From this model, we can predict the solving rules the model uses in filling each number. 
 The accuracy of this rule prediction is 90% on training data and 70% on testdata. 
 We were short on time and only relabelled 30 Sudoku boards.  
-So there was an overfitting issue. 
+So there was an overfitting issue. We came out with several ideas to resolve this problem and improve the model. Due to the time constraint, we only include them in our report and 
