@@ -1,4 +1,4 @@
-# Deep-learning-project
+# Build an Explainable Sudoku Solver.
 
 This repository contains the code for the Digital Sudoku SatNet project and it primarily refers to the ICML 2019 SatNet paper [https://icml.cc/Conferences/2019/Schedule?showEvent=3947]
 We played with the number of parameters and get the model output printed.
