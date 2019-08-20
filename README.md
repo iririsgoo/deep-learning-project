@@ -93,7 +93,7 @@ a corresponding step index matrix
 ###### Result
 We present one example output of the model
 
-![](images/sample_output.png)
+![](images/sampleOutput.png)
 
 0 means the numberis already given. 
 ”sole” means this number is determined by strategy 1: sole candidate. 
@@ -101,6 +101,5 @@ We present one example output of the model
 
 From this model, we can predict the solving rules the model uses in filling each number. 
 The accuracy of this rule prediction is 90% on training data and 70% on testdata. 
-The variance is high because the size of training setis small. 
 We were short on time and only relabelled 30 Sudoku boards.  
-When we printed out and checked the results, the ac-curacy is about 70%.
+So there was an overfitting issue. 
